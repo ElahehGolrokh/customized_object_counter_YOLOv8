@@ -3,19 +3,37 @@
 import argparse
 import os
 import cv2
-from ultralytics import YOLO, solutions
+from ultralytics import YOLO
 from src.custom_counter import ObjectCounter
 
 
 parser = argparse.ArgumentParser(description='Generate data and model paths')
 
 # Defining the parser arguments
-parser.add_argument('-o', '--outputs', default='outputs', help='path to output dir')
-parser.add_argument('-i', '--inputs', default='inputs', help='path to input dir')
-parser.add_argument('-m', '--models', default='models', help='path to saved models dir')
-parser.add_argument('-on', '--output_name', default='output.avi', help='name of the output file for saving with .avi ext')
-parser.add_argument('-in', '--input_name', default=None, help='name of the input video file')
-parser.add_argument('-mn', '--model_name', default='yolov8n.pt', help='name of the object detection saved model')
+parser.add_argument('-o',
+                    '--outputs',
+                    default='outputs',
+                    help='path to output dir')
+parser.add_argument('-i',
+                    '--inputs',
+                    default='inputs',
+                    help='path to input dir')
+parser.add_argument('-m',
+                    '--models',
+                    default='models',
+                    help='path to saved models dir')
+parser.add_argument('-on',
+                    '--output_name',
+                    default='output.avi',
+                    help='name of the output file for saving with .avi ext')
+parser.add_argument('-in',
+                    '--input_name',
+                    default=None,
+                    help='name of the input video file')
+parser.add_argument('-mn',
+                    '--model_name',
+                    default='yolov8n.pt',
+                    help='name of the object detection saved model')
 
 args = parser.parse_args()
 
@@ -47,7 +65,6 @@ def main(input_dir: str = input_dir,
         cap = cv2.VideoCapture(input_path)
     except Exception:
         print("Error reading video file or model")
-    # assert cap.isOpened(), "Error reading video file"
 
     else:
         # Get video properties: width, height, and frames per second (fps)
@@ -82,8 +99,11 @@ def main(input_dir: str = input_dir,
                 print("Video frame is empty or video processing has been successfully completed.")
                 break
 
-            # Perform object tracking on the current frame, filtering by specified classes
-            tracks = model.track(im0, persist=True, show=False, classes=classes_to_count)
+            # Perform object tracking on the current frame
+            tracks = model.track(im0,
+                                 persist=True,
+                                 show=False,
+                                 classes=classes_to_count)
 
             # Use the Object Counter to count objects in the frame and get the annotated image
             im0 = counter.start_counting(im0, tracks)

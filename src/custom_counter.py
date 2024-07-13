@@ -44,7 +44,7 @@ class ObjectCounter:
         track_history (defaultdict(list)): keeps track of all previous positions (x, y)
                                            for all items in the scene.
                                            for example {1: [(x1, y1), (x2, y2), (x3, y3)], 2: [(x1, y1), (x2, y2), (x3, y3)]}
-    
+
     Methods
     -------
         mouse_event_for_region()
@@ -135,7 +135,7 @@ class ObjectCounter:
             x (int): The x-coordinate of the mouse pointer.
             y (int): The y-coordinate of the mouse pointer.
             flags (int): Any associated event flags (e.g., cv2.EVENT_FLAG_CTRLKEY,
-            cv2.EVENT_FLAG_SHIFTKEY, etc.).
+                         cv2.EVENT_FLAG_SHIFTKEY, etc.).
             params (dict): Additional parameters for the function.
         """
         if event == cv2.EVENT_LBUTTONDOWN:
@@ -218,7 +218,7 @@ class ObjectCounter:
                     if distance < self.line_dist_thresh and track_id not in self.count_ids:
                         # pdb.set_trace()
                         if ((prev_position_2[1] - self.counting_region.centroid.y) < 0 and
-                            (prev_position_1[1] - self.counting_region.centroid.y) > 0):
+                           (prev_position_1[1] - self.counting_region.centroid.y) > 0):
                             self.count_ids.append(track_id)
                             self.in_counts += 1
                             self.class_wise_count[self.names[cls]]["IN"] += 1
