@@ -66,7 +66,7 @@ def main(input_dir: str = input_dir,
                                        cv2.VideoWriter_fourcc(*"mp4v"),
                                        fps, (w, h))
 
-        # Initialize the Object Counter with visualization options and other parameters
+        # Initialize the Object Counter
         counter = ObjectCounter(
             view_img=True,  # Display the image during processing
             reg_pts=line_points,  # Region of interest points
