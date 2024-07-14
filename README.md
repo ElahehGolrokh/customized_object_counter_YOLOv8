@@ -1,9 +1,5 @@
 # Car Counting on Highway Using Customized YOLOv8 Object Counter
-![car counting](<iframe src="https://player.vimeo.com/video/983785220?h=7ae9360ad5" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/983785220">output_counting_cars</a> from <a href="https://vimeo.com/user222762552">Elaheh Golrokh</a> on <a href="https://vimeo.com">Vimeo</a>.</p>)
-<br>
-<iframe src="https://player.vimeo.com/video/983785220?h=7ae9360ad5" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/983785220">output_counting_cars</a> from <a href="https://vimeo.com/user222762552">Elaheh Golrokh</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+![car counting](https://player.vimeo.com/video/983785220?h=7ae9360ad5)
 This project aims to count cars entering or exiting a specified line on the highway. It includes object tracking and object counting functionalities.<br>
 
 The basic functionality is derived from the YOLO object counting example. However, the object counter has been customized to accurately count cars entering or exiting a specific region on the highway.<br>
