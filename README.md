@@ -1,6 +1,6 @@
 # Car Counting on Highway Using Customized YOLOv8 Object Counter
 
-<p style='text-align:center;'>![object counting](giphy.gif)</p>
+![object counting](giphy.gif)
 
 This project aims to count cars entering or exiting a specified line on the highway. It includes object tracking and object counting functionalities.<br>
 
