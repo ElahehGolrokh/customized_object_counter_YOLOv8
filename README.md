@@ -1,5 +1,5 @@
 # Car Counting on Highway Using Customized YOLOv8 Object Counter
-<a href="https://www.dropbox.com/scl/fi/r4twlp3skzzykzl6uwgny/output_counting_cars.mp4?rlkey=fcpocsflqe067tnl10soa7hdc&st=h0xu7002&dl=0">Watch the video</a>
+<a href="https://www.dropbox.com/s/FILE_ID/output_counting_cars.mp4?dl=0">Watch the video</a>
 
 This project aims to count cars entering or exiting a specified line on the highway. It includes object tracking and object counting functionalities.<br>
 
