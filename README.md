@@ -1,6 +1,6 @@
 # Car Counting on Highway Using Customized YOLOv8 Object Counter
 <video width="320" height="240" controls>
-  <source src="output_counting_cars.mp4" type="video/mp4">
+  <source src="https://www.dropbox.com/scl/fi/r4twlp3skzzykzl6uwgny/output_counting_cars.mp4?rlkey=fcpocsflqe067tnl10soa7hdc&st=h0xu7002&dl=0" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 This project aims to count cars entering or exiting a specified line on the highway. It includes object tracking and object counting functionalities.<br>
