@@ -1,6 +1,8 @@
 # Car Counting on Highway Using Customized YOLOv8 Object Counter
 ![object counting thumbnail](https://raw.githubusercontent.com/ElahehGolrokh/customized_object_counter_YOLOv8/master/output_counting_cars.png)
 
+![object counting](giphy.gif)
+
 <a href="https://vimeo.com/983785220">Watch the output video </a> <br>
 
 This project aims to count cars entering or exiting a specified line on the highway. It includes object tracking and object counting functionalities.<br>
